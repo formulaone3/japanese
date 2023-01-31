@@ -1,5 +1,7 @@
-import {kanjiArray} from 'kanji.js'
-alert(kanjiArray)
+import kanjiArray from 'kanji.js'
+import name from 't.js'
+alert(name)
+alert(kanjiArray[0])
 const root = document.getElementById('root')
 const kanjiInput = document.getElementById('kanji-input')
 const submitBtn = document.getElementById('submit-button')
