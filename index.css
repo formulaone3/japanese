@@ -43,9 +43,32 @@ input {
     cursor: pointer;
 }
 
+.buttons {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+}
 
+.n-btn {
+    border: 1px solid black;
+    padding: 3px 25px 3px 25px;
+    border-radius: 15px;
+    background-color: white;
+}
 
+.n-btn:hover {
+    cursor: pointer;
+    background-color: lightseagreen;
+    color: white;
+}
 
+.kanji-text {
+    height: 100px;
+    width: 150px;
+    text-align: center;
+}
 
-
-
+.wrong {
+    height: 20px;
+    width: 100px;
+}
