@@ -50,15 +50,38 @@ input {
 }
 
 .n-btn {
-    border: 1px solid black;
     padding: 3px 25px 3px 25px;
     border-radius: 15px;
     background-color: white;
 }
 
-.n-btn:hover {
+.n-btn1:hover {
+    cursor: pointer;
+    background-color: crimson;
+    color: white;
+}
+
+.n-btn2:hover {
+    cursor: pointer;
+    background-color: goldenrod;
+    color: white;
+}
+
+.n-btn3:hover {
+    cursor: pointer;
+    background-color: brown;
+    color: white;
+}
+
+.n-btn4:hover {
     cursor: pointer;
     background-color: lightseagreen;
+    color: white;
+}
+
+.n-btn5:hover {
+    cursor: pointer;
+    background-color: lightskyblue;
     color: white;
 }
 
@@ -71,4 +94,6 @@ input {
 .wrong {
     height: 20px;
     width: 100px;
+    padding-bottom: 20px;
+    text-align: center;
 }
