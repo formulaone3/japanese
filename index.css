@@ -5,6 +5,7 @@ body {
 
 .header-text {
     text-align: center;
+    margin-left: 30px;
 }
 
 .kanji-container {
@@ -53,6 +54,7 @@ input {
     padding: 3px 25px 3px 25px;
     border-radius: 15px;
     background-color: white;
+    text-transform: uppercase;
 }
 
 .n-btn1:hover {
@@ -96,4 +98,41 @@ input {
     width: 100px;
     padding-bottom: 20px;
     text-align: center;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.dark-btn {
+    border: none;
+    border-radius: 10px;
+    padding: 10px;
+    height: 35px;
+    background: white;
+    font-family: 'Sofia-sans', Helvetica, sans-serif;
+}
+
+.dark-btn:hover {
+    cursor: pointer;
+    background: goldenrod;
+}
+
+
+.dark {
+    background: rgb(35,36,38);
+    background: radial-gradient(circle, rgba(35,36,38,1) 0%, rgba(24,21,22,1) 100%);
+}
+
+.dark-input{
+    background: rgb(255, 255, 255);
+}
+
+.dark-text {
+    color: white;
+}
+
+.dark-header {
+    color: rgb(255, 255, 255);
 }

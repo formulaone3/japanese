@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>NaM</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css" integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc" crossorigin="anonymous">
     <link href="index.css" rel="stylesheet"></link>
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -15,7 +16,12 @@
 
 <body>
 <div class="container" id="root">
-    <h1 class="header-text">Kanji Practice</h1>
+<div class="header">
+    <h1 class="header-text"></h1>
+    <h1 id="header-text" class="header-text">Kanji Practice</h1>
+    <button id="dark-button" class="dark-btn"><i class="fas fa-moon"></i>
+    </i></button>
+</div>
     <div class="kanji-container">
         <h3 id="kanji-text" class="kanji-text"></h3>
         <input id="kanji-input" placeholder="Type here" type="text"></input>
@@ -27,7 +33,10 @@
         <a id="btn-3" class="n-btn n-btn3">n3</a>
         <a id="btn-4" class="n-btn n-btn4">n4</a>
         <a id="btn-5" class="n-btn n-btn5">n5</a>
+
     </div>
+    
+
 </div>    
 
 

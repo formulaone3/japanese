@@ -8,8 +8,23 @@ let btn2 = document.getElementById('btn-2')
 let btn3 = document.getElementById('btn-3')
 let btn4 = document.getElementById('btn-4')
 let btn5 = document.getElementById('btn-5')
+let darkToggle = document.getElementById('dark-button')
+let header =document.getElementById('header-text')      
 
-      
+darkToggle.addEventListener('click', toggle)
+function toggle(){
+    document.body.classList.toggle('dark')
+    kanjiInput.classList.toggle('dark-input')
+    currentKanji.classList.toggle('dark-text')
+    wrongInput.classList.toggle('dark-text')
+    header.classList.toggle('dark-header')
+    btn1.classList.toggle('dark-input')
+    btn2.classList.toggle('dark-input')
+    btn3.classList.toggle('dark-input')
+    btn4.classList.toggle('dark-input')
+    btn5.classList.toggle('dark-input')
+}
+
 
 let activeArray = null
 
@@ -20,7 +35,7 @@ kanjiInput.addEventListener('keypress', () => {
       wrongInput.textContent = ""
       currentKanji.textContent = activeArray[Math.floor(Math.random() * activeArray.length)]
     } else {
-      wrongInput.textContent = "wrong"
+      wrongInput.textContent = "try again"
     }
   }
 })
