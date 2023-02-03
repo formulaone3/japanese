@@ -33,6 +33,7 @@ function toggle(){
     formDiv.classList.toggle('dark-text')
     greetingText.classList.toggle('dark-text')
     answersBtn.classList.toggle('dark-text')
+    qAnswers.classList.toggle('dark-text')
     document.body.classList.toggle('dark')
     navIcon.classList.toggle('dark-text')
     navItems.classList.toggle('dark-text')
@@ -58,7 +59,7 @@ gb1.addEventListener('click', function(){
   formDiv.innerHTML = ""
   formDiv.innerHTML += forms
   answersBtn.style.display = 'block'
-  let answersbox = `<h3 class="answers" >Answers: 1: []  2: []  3: [] 4: [] 5: []</h3>`
+  let answersbox = `<h3 class="answers" >Answers: 1: [ いえども ]  2: [ ともなると ]  3: [ まみれ ] 4: [ とあって ] 5: [ ぬいた ]</h3>`
   qAnswers.innerHTML = ""
   qAnswers.innerHTML += answersbox
   qAnswers.style.display = "none"
@@ -79,7 +80,7 @@ gb2.addEventListener('click', function(){
   formDiv.innerHTML = ""
   formDiv.innerHTML += forms
   answersBtn.style.display = 'block'
-  let answersbox = `<h3 class="answers" >Answers: 1: []  2: []  3: [] 4: [] 5: []</h3>`
+  let answersbox = `<h3 class="answers" >Answers: 1: [ しかかからない ]  2: [ 基づいて ]  3: [ 死に ] 4: [ ありながら ] 5: [ 最中 ]</h3>`
   qAnswers.innerHTML = ""
   qAnswers.innerHTML += answersbox
   qAnswers.style.display = "none"
@@ -101,7 +102,7 @@ gb3.addEventListener('click', function(){
   formDiv.innerHTML = ""
   formDiv.innerHTML += forms
   answersBtn.style.display = 'block'
-  let answersbox = `<h3 class="answers" >Answers: 1: []  2: []  3: [] 4: [] 5: []</h3>`
+  let answersbox = `<h3 class="answers" >Answers: 1: [ って ]  2: [ たびに ]  3: [ いつの間にか ] 4: [ ことになった ] 5: [ のように ]</h3>`
   qAnswers.innerHTML = ""
   qAnswers.innerHTML += answersbox
   qAnswers.style.display = "none"
@@ -122,7 +123,7 @@ gb4.addEventListener('click', function(){
   formDiv.innerHTML = ""
   formDiv.innerHTML += forms
   answersBtn.style.display = 'block'
-  let answersbox = `<h3 class="answers" >Answers: 1: []  2: [nam]  3: [] 4: [] 5: []</h3>`
+  let answersbox = `<h3 class="answers" >Answers: 1: [ のに ]  2: [ 決めないでほしい ]  3: [ かかってきた ] 4: [ できてよかった ] 5: [ あとで ]</h3>`
   qAnswers.innerHTML = ""
   qAnswers.innerHTML += answersbox
   qAnswers.style.display = "none"
@@ -143,7 +144,7 @@ gb5.addEventListener('click', function(){
   formDiv.innerHTML = ""
   formDiv.innerHTML += forms
   answersBtn.style.display = 'block'
-  let answersbox = `<h3 class="answers" >Answers: 1: []  2: []  3: [] 4: [] 5: []</h3>`
+  let answersbox = `<h3 class="answers" >Answers: 1: [　を　]</span>  2: [　まだ　]  3: [　で　] 4: [　が　] 5: [　行って　]</h3>`
   qAnswers.innerHTML = ""
   qAnswers.innerHTML += answersbox
   qAnswers.style.display = "none"

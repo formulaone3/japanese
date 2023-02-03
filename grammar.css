@@ -224,9 +224,15 @@ input {
 
 .answers-div {
     text-align: center;
+    
 }
 
 #answers-display {
     display: none;
+    border: 1px solid rgb(221, 217, 217);
+    margin-top: -35px;
 }
 
+.answer-text {
+    color: rgb(144, 115, 62);
+}
