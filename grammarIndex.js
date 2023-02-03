@@ -24,6 +24,7 @@ function navToggle(){
 darkToggle.addEventListener('click', toggle)
 function toggle(){
     header2.classList.toggle('dark-text')
+    formDiv.classList.toggle('dark-text')
     document.body.classList.toggle('dark')
     navIcon.classList.toggle('dark-text')
     navItems.classList.toggle('dark-text')
@@ -35,14 +36,14 @@ function toggle(){
   // grammar forms for grammar page //
 
 gb1.addEventListener('click', function(){
-  let forms = n1GrammarArray.map(g => {
-    return `<form class='grammar-form'>
-        <p class='question1-text'>${g}</p>
-        <input type='checkbox'>...</input>
-        <input type='checkbox'>...</input>
-        <input type='checkbox'>...</input>
-        <input type='checkbox'>...</input>
-    </form>
+  let forms = n1GrammarArray.map(g => {0
+    return `<form class='grammar-form'>10
+    <p class='question-text'>${g.questi21on}</p>0
+    <input class="answer" type='checkbox'>${g.answer[0]}</input>
+    <input class="answer" type='checkbox'>${g.answer[1]}</input>
+    <input class="answer" type='checkbox'>${g.answer[2]}</input>
+    <input class="answer" type='checkbox'>${g.answer[3]}</input>
+</form>
     `
   }).join('')
   formDiv.innerHTML = ""
@@ -52,12 +53,12 @@ gb1.addEventListener('click', function(){
 gb2.addEventListener('click', function(){
   let forms = n2GrammarArray.map(g => {
     return `<form class='grammar-form'>
-        <p class='question1-text'>${g}</p>
-        <input type='checkbox'>...</input>
-        <input type='checkbox'>...</input>
-        <input type='checkbox'>...</input>
-        <input type='checkbox'>...</input>
-    </form>
+    <p class='question-text'>${g.question}</p>
+    <input class="answer" type='checkbox'>${g.answer[0]}</input>
+    <input class="answer" type='checkbox'>${g.answer[1]}</input>
+    <input class="answer" type='checkbox'>${g.answer[2]}</input>
+    <input class="answer" type='checkbox'>${g.answer[3]}</input>
+</form>
     `
   }).join('')
   formDiv.innerHTML = ""
@@ -67,11 +68,11 @@ gb2.addEventListener('click', function(){
 gb3.addEventListener('click', function(){
   let forms = n3GrammarArray.map(g => {
     return `<form class='grammar-form'>
-        <p class='question1-text'>${g.question}</p>
-        <input type='checkbox'>${g.answer[0]}</input>
-        <input type='checkbox'>${g.answer[1]}</input>
-        <input type='checkbox'>${g.answer[2]}</input>
-        <input type='checkbox'>${g.answer[3]}</input>
+        <p class='question-text'>${g.question}</p>
+        <input class="answer" type='checkbox'>${g.answer[0]}</input>
+        <input class="answer" type='checkbox'>${g.answer[1]}</input>
+        <input class="answer" type='checkbox'>${g.answer[2]}</input>
+        <input class="answer" type='checkbox'>${g.answer[3]}</input>
     </form>
     `
   }).join('')
@@ -81,11 +82,11 @@ gb3.addEventListener('click', function(){
 gb4.addEventListener('click', function(){
   let forms = n4GrammarArray.map(g => {
     return `<form class='grammar-form'>
-        <p class='question1-text'>${g}</p>
-        <input type='checkbox'>...</input>
-        <input type='checkbox'>...</input>
-        <input type='checkbox'>...</input>
-        <input type='checkbox'>...</input>
+        <p class='question-text'>${g.question}</p>
+        <input class="answer" type='checkbox'>${g.answer}</input>
+        <input class="answer" type='checkbox'>${g.answer}</input>
+        <input class="answer" type='checkbox'>${g.answer}</input>
+        <input class="answer" type='checkbox'>${g.answer}</input>
     </form>
     `
   }).join('')
@@ -95,12 +96,12 @@ gb4.addEventListener('click', function(){
 gb5.addEventListener('click', function(){
   let forms = n5GrammarArray.map(g => {
     return `<form class='grammar-form'>
-        <p class='question1-text'>${g}</p>
-        <input type='checkbox'>...</input>
-        <input type='checkbox'>...</input>
-        <input type='checkbox'>...</input>
-        <input type='checkbox'>...</input>
-    </form>
+    <p class='question-text'>${g.question}</p>
+    <input class="answer" type='checkbox'>${g.answer}</input>
+    <input class="answer" type='checkbox'>${g.answer}</input>
+    <input class="answer" type='checkbox'>${g.answer}</input>
+    <input class="answer" type='checkbox'>${g.answer}</input>
+</form>
     `
   }).join('')
   formDiv.innerHTML += forms
