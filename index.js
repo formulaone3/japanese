@@ -32,6 +32,7 @@ function navToggle(){
 darkToggle.addEventListener('click', toggle)
 function toggle(){
     document.body.classList.toggle('dark')
+    greetingText.classList.toggle('dark-text')
     navIcon.classList.toggle('dark-text')
     navItems.classList.toggle('dark-text')
     kanjiInput.classList.toggle('dark-input')

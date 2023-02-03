@@ -15,7 +15,7 @@ let gli3 = document.getElementById('g-li-3')
 let formDiv = document.getElementById('form-container')
 let greetingText = document.getElementById('show-hide')
 let answersBtn = document.getElementById('answers-btn')
-let Qanswers = document.getElementById('aa')
+let qAnswers = document.getElementById('answers-display')
 
 
 //    nav toggle      //
@@ -58,8 +58,10 @@ gb1.addEventListener('click', function(){
   formDiv.innerHTML = ""
   formDiv.innerHTML += forms
   answersBtn.style.display = 'block'
-  //let answersbox = `<h3 id="aa" class="answers" >answers: 1: []  2: []  3: [] 4: [] 5: []</h3>`
-  //document.body.innerHTML += answersbox
+  let answersbox = `<h3 class="answers" >Answers: 1: []  2: []  3: [] 4: [] 5: []</h3>`
+  qAnswers.innerHTML = ""
+  qAnswers.innerHTML += answersbox
+  qAnswers.style.display = "none"
 })
 
 gb2.addEventListener('click', function(){
@@ -77,8 +79,11 @@ gb2.addEventListener('click', function(){
   formDiv.innerHTML = ""
   formDiv.innerHTML += forms
   answersBtn.style.display = 'block'
-  //let answersbox = `<h3 id="aa" class="answers" >answers: 1: []  2: []  3: [] 4: [] 5: []</h3>`
-  //document.body.innerHTML += answersbox
+  let answersbox = `<h3 class="answers" >Answers: 1: []  2: []  3: [] 4: [] 5: []</h3>`
+  qAnswers.innerHTML = ""
+  qAnswers.innerHTML += answersbox
+  qAnswers.style.display = "none"
+  
 })
 
 gb3.addEventListener('click', function(){
@@ -96,8 +101,10 @@ gb3.addEventListener('click', function(){
   formDiv.innerHTML = ""
   formDiv.innerHTML += forms
   answersBtn.style.display = 'block'
-  //let answersbox = `<h3 id="aa" class="answers" >answers: 1: []  2: []  3: [] 4: [] 5: []</h3>`
-  //document.body.innerHTML += answersbox
+  let answersbox = `<h3 class="answers" >Answers: 1: []  2: []  3: [] 4: [] 5: []</h3>`
+  qAnswers.innerHTML = ""
+  qAnswers.innerHTML += answersbox
+  qAnswers.style.display = "none"
 })
 
 gb4.addEventListener('click', function(){
@@ -115,8 +122,10 @@ gb4.addEventListener('click', function(){
   formDiv.innerHTML = ""
   formDiv.innerHTML += forms
   answersBtn.style.display = 'block'
-  //let answersbox = `<h3 id="aa" class="answers" >answers: 1: []  2: []  3: [] 4: [] 5: []</h3>`
-  //document.body.innerHTML += answersbox
+  let answersbox = `<h3 class="answers" >Answers: 1: []  2: [nam]  3: [] 4: [] 5: []</h3>`
+  qAnswers.innerHTML = ""
+  qAnswers.innerHTML += answersbox
+  qAnswers.style.display = "none"
 })
 
 gb5.addEventListener('click', function(){
@@ -134,13 +143,17 @@ gb5.addEventListener('click', function(){
   formDiv.innerHTML = ""
   formDiv.innerHTML += forms
   answersBtn.style.display = 'block'
-  //let answersbox = `<h3 id="aa" class="answers" >answers: 1: []  2: []  3: [] 4: [] 5: []</h3>`
-  //document.body.innerHTML += answersbox
+  let answersbox = `<h3 class="answers" >Answers: 1: []  2: []  3: [] 4: [] 5: []</h3>`
+  qAnswers.innerHTML = ""
+  qAnswers.innerHTML += answersbox
+  qAnswers.style.display = "none"
+  
 })
 
 
 // answers toggle //
 
 answersBtn.addEventListener('click', function(){
-  Qanswers.classList.toggle('show-hide-toggle')
+  qAnswers.style.display = "block"
+  answersBtn.style.display = 'none'
 })
