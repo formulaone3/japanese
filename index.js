@@ -1,5 +1,5 @@
 import {kanjiArrayn1, kanjiArrayn2, kanjiArrayn3, kanjiArrayn4, kanjiArrayn5} from './kanjiArrays.js'
-import {n2GrammarArray, n1GrammarArray} from './grammar.js'
+import {n2GrammarArray, n1GrammarArray, n3GrammarArray} from './grammar.js'
 
 let kanjiInput = document.getElementById('kanji-input')
 let currentKanji = document.getElementById('kanji-text')
@@ -57,11 +57,11 @@ gb2.addEventListener('click', function(){
 gb3.addEventListener('click', function(){
   let forms = n3GrammarArray.map(g => {
     return `<form class='grammar-form'>
-        <p class='question1-text'>${g}</p>
-        <input type='checkbox'>...</input>
-        <input type='checkbox'>...</input>
-        <input type='checkbox'>...</input>
-        <input type='checkbox'>...</input>
+        <p class='question1-text'>${g.question}</p>
+        <input type='checkbox'>${g.answer[0]}</input>
+        <input type='checkbox'>${g.answer[1]}</input>
+        <input type='checkbox'>${g.answer[2]}</input>
+        <input type='checkbox'>${g.answer[3]}</input>
     </form>
     `
   }).join('')
