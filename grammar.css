@@ -102,7 +102,6 @@ input {
 .nav-links {
     display: none;
     margin-left: -40px;
-    transition: all 1s ease-in-out;
 }
 
 .nav-active {
