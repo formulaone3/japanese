@@ -14,4 +14,4 @@ const n5GrammarArray  = ['']
 
 
 
-export {n2GrammarArray, n1GrammarArray, n3GrammarArray}
+export {n2GrammarArray, n1GrammarArray, n3GrammarArray, n4GrammarArray, n5GrammarArray}

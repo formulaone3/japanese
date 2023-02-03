@@ -97,42 +97,6 @@ input {
     justify-content: space-between;
 }
 
-
-/* dark */
-
-.dark-btn {
-    border: none;
-    border-radius: 10px;
-    padding: 10px;
-    height: 35px;
-    background: white;
-    font-family: 'Sofia-sans', Helvetica, sans-serif;
-}
-
-.dark-btn:hover {
-    cursor: pointer;
-    background: goldenrod;
-}
-
-
-.dark {
-    background: rgb(35,36,38);
-    background: radial-gradient(circle, rgba(35,36,38,1) 0%, rgba(24,21,22,1) 100%);
-}
-
-.dark-input{
-    background: rgb(255, 255, 255);
-}
-
-.dark-text {
-    color: white;
-}
-
-.dark-header {
-    color: rgb(255, 255, 255);
-}
-
-
 /* nav */
 
 .nav-links {
@@ -163,6 +127,7 @@ a, .nav-item {
     text-decoration: none;
     color: black;
     font-size: 1.2rem;
+    font-weight: bold;
 }
 
 a:hover {
@@ -191,8 +156,35 @@ input {
 }
 
 
+/* dark */
+
+.dark-btn {
+    border: none;
+    border-radius: 10px;
+    padding: 10px;
+    height: 35px;
+    background: white;
+    font-family: 'Sofia-sans', Helvetica, sans-serif;
+}
+
+.dark-btn:hover {
+    cursor: pointer;
+    background: goldenrod;
+}
 
 
+.dark {
+    background: rgb(35,36,38);
+    background: radial-gradient(circle, rgba(35,36,38,1) 0%, rgba(24,21,22,1) 100%);
+}
+
+.dark-input{
+    background: rgb(255, 255, 255);
+}
+
+.dark-text {
+    color: white;
+}
 
 
 
