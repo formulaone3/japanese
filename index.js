@@ -17,6 +17,8 @@ let li1 = document.getElementById('li-1')
 let li2 = document.getElementById('li-2')
 let li3 = document.getElementById('li-3')
 let formDiv = document.getElementById('form-container')
+let greetingText = document.getElementById('show-hide')
+
 
 //    nav toggle      //
 

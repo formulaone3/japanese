@@ -180,3 +180,12 @@ a:hover {
     font-size: 30px;
     cursor: pointer;
   }
+
+.show-hide-container {
+    text-align: center;
+    margin-top: 70px;
+}
+
+.show-hide-toggle {
+    display: none;
+}

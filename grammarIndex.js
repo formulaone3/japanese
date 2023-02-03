@@ -13,6 +13,10 @@ let gli1 = document.getElementById('g-li-1')
 let gli2 = document.getElementById('g-li-2')
 let gli3 = document.getElementById('g-li-3')
 let formDiv = document.getElementById('form-container')
+let greetingText = document.getElementById('show-hide')
+let answersBtn = document.getElementById('answers-btn')
+let Qanswers = document.getElementById('aa')
+
 
 //    nav toggle      //
 navIcon.addEventListener('click', navToggle)
@@ -21,10 +25,14 @@ function navToggle(){
   navItems.classList.toggle('nav-active')
 }
 
+// dark toggle //
+
 darkToggle.addEventListener('click', toggle)
 function toggle(){
     header2.classList.toggle('dark-text')
     formDiv.classList.toggle('dark-text')
+    greetingText.classList.toggle('dark-text')
+    answersBtn.classList.toggle('dark-text')
     document.body.classList.toggle('dark')
     navIcon.classList.toggle('dark-text')
     navItems.classList.toggle('dark-text')
@@ -36,9 +44,10 @@ function toggle(){
   // grammar forms for grammar page //
 
 gb1.addEventListener('click', function(){
+  greetingText.style.display = "none"
   let forms = n1GrammarArray.map(g => {0
-    return `<form class='grammar-form'>10
-    <p class='question-text'>${g.questi21on}</p>0
+    return `<form class='grammar-form'>
+    <p class='question-text'>${g.question}</p>
     <input class="answer" type='checkbox'>${g.answer[0]}</input>
     <input class="answer" type='checkbox'>${g.answer[1]}</input>
     <input class="answer" type='checkbox'>${g.answer[2]}</input>
@@ -48,9 +57,13 @@ gb1.addEventListener('click', function(){
   }).join('')
   formDiv.innerHTML = ""
   formDiv.innerHTML += forms
+  answersBtn.style.display = 'block'
+  //let answersbox = `<h3 id="aa" class="answers" >answers: 1: []  2: []  3: [] 4: [] 5: []</h3>`
+  //document.body.innerHTML += answersbox
 })
 
 gb2.addEventListener('click', function(){
+  greetingText.style.display = "none"
   let forms = n2GrammarArray.map(g => {
     return `<form class='grammar-form'>
     <p class='question-text'>${g.question}</p>
@@ -63,9 +76,13 @@ gb2.addEventListener('click', function(){
   }).join('')
   formDiv.innerHTML = ""
   formDiv.innerHTML += forms
+  answersBtn.style.display = 'block'
+  //let answersbox = `<h3 id="aa" class="answers" >answers: 1: []  2: []  3: [] 4: [] 5: []</h3>`
+  //document.body.innerHTML += answersbox
 })
 
 gb3.addEventListener('click', function(){
+  greetingText.style.display = "none"
   let forms = n3GrammarArray.map(g => {
     return `<form class='grammar-form'>
         <p class='question-text'>${g.question}</p>
@@ -76,33 +93,54 @@ gb3.addEventListener('click', function(){
     </form>
     `
   }).join('')
+  formDiv.innerHTML = ""
   formDiv.innerHTML += forms
+  answersBtn.style.display = 'block'
+  //let answersbox = `<h3 id="aa" class="answers" >answers: 1: []  2: []  3: [] 4: [] 5: []</h3>`
+  //document.body.innerHTML += answersbox
 })
 
 gb4.addEventListener('click', function(){
+  greetingText.style.display = "none"
   let forms = n4GrammarArray.map(g => {
     return `<form class='grammar-form'>
         <p class='question-text'>${g.question}</p>
-        <input class="answer" type='checkbox'>${g.answer}</input>
-        <input class="answer" type='checkbox'>${g.answer}</input>
-        <input class="answer" type='checkbox'>${g.answer}</input>
-        <input class="answer" type='checkbox'>${g.answer}</input>
+        <input class="answer" type='checkbox'>${g.answer[0]}</input>
+        <input class="answer" type='checkbox'>${g.answer[1]}</input>
+        <input class="answer" type='checkbox'>${g.answer[2]}</input>
+        <input class="answer" type='checkbox'>${g.answer[3]}</input>
     </form>
     `
   }).join('')
+  formDiv.innerHTML = ""
   formDiv.innerHTML += forms
+  answersBtn.style.display = 'block'
+  //let answersbox = `<h3 id="aa" class="answers" >answers: 1: []  2: []  3: [] 4: [] 5: []</h3>`
+  //document.body.innerHTML += answersbox
 })
 
 gb5.addEventListener('click', function(){
+  greetingText.style.display = "none"
   let forms = n5GrammarArray.map(g => {
     return `<form class='grammar-form'>
     <p class='question-text'>${g.question}</p>
-    <input class="answer" type='checkbox'>${g.answer}</input>
-    <input class="answer" type='checkbox'>${g.answer}</input>
-    <input class="answer" type='checkbox'>${g.answer}</input>
-    <input class="answer" type='checkbox'>${g.answer}</input>
+    <input class="answer" type='checkbox'>${g.answer[0]}</input>
+    <input class="answer" type='checkbox'>${g.answer[1]}</input>
+    <input class="answer" type='checkbox'>${g.answer[2]}</input>
+    <input class="answer" type='checkbox'>${g.answer[3]}</input>
 </form>
     `
   }).join('')
+  formDiv.innerHTML = ""
   formDiv.innerHTML += forms
+  answersBtn.style.display = 'block'
+  //let answersbox = `<h3 id="aa" class="answers" >answers: 1: []  2: []  3: [] 4: [] 5: []</h3>`
+  //document.body.innerHTML += answersbox
+})
+
+
+// answers toggle //
+
+answersBtn.addEventListener('click', function(){
+  Qanswers.classList.toggle('show-hide-toggle')
 })
