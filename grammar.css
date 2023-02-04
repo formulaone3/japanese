@@ -51,9 +51,10 @@ input {
 .buttons {
     display: flex;
     justify-content: center;
-    gap: 50px;
     margin-top: 120px;
     max-width: 100%;
+    gap:20px;
+    border: 2px solid red;
 }
 
 .n-btn {
