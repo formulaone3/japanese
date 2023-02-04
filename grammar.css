@@ -48,11 +48,17 @@ input {
 
 /* n buttons */
 
+.buttons-container {
+    width: 500px;
+    margin: 0 auto;
+}
+
 .buttons {
     display: flex;
     justify-content: center;
     margin-top: 120px;
-    max-width: 100%;
+    -width: 200px;
+    -max-width: 100%;
     gap:20px;
     border: 2px solid red;
 }
