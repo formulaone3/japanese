@@ -6,6 +6,7 @@ body {
 .header-text {
     text-align: center;
     margin-left: 30px;
+    margin-top: 80px;
     align-self: flex-start
 }
 
@@ -73,13 +74,13 @@ input {
 
 .n-btn2:hover {
     cursor: pointer;
-    background-color: goldenrod;
+    background-color: brown;
     color: white;
 }
 
 .n-btn3:hover {
     cursor: pointer;
-    background-color: brown;
+    background-color: goldenrod;
     color: white;
 }
 
@@ -151,23 +152,23 @@ input {
 .nav-links {
     display: none;
     margin-left: -40px;
-    transition: all 1s ease-in-out;
+    
 }
 
 .nav-active {
     list-style: none;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: center;
     position: fixed;
-    top: 8%;
-    left: 7%;
+    top: 0%;
+    left: 20%;
     right: 0;
     gap: 10px;
     padding: 5px;
     -background: rgba(255, 255, 255, 0.329);
-    width: 30%;
-    border-radius: 10px;
+    width: 75%;
+    border-bottom: 1px solid rgb(167, 162, 162);
 }
 
 
@@ -175,12 +176,12 @@ a, .nav-item {
     list-style: none;
     text-decoration: none;
     color: black;
-    font-size: 1.2rem;
-    font-weight: bold;
+    font-size: 0.9rem;
+    font-weight: 300;
 }
 
 a:hover {
-    color: navy;
+    color: goldenrod;
 }
 
 .menu-button {
@@ -195,4 +196,22 @@ a:hover {
 
 .show-hide-toggle {
     display: none;
+}
+
+
+@media (min-width: 700px){
+    .nav-active {
+        flex-direction: column;
+        top: 8%;
+        left: 3%;
+        border-bottom: none;
+        
+    }
+    a {
+        font-weight: bold;
+        font-size: 1.3rem;
+    }
+    .n-btn {
+        font-size: 1.3rem;
+    }
 }

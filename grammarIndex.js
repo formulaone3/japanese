@@ -49,17 +49,17 @@ gb1.addEventListener('click', function(){
   let forms = n1GrammarArray.map(g => {0
     return `<form class='grammar-form'>
     <p class='question-text'>${g.question}</p>
-    <input class="answer" type='checkbox'>${g.answer[0]}</input>
-    <input class="answer" type='checkbox'>${g.answer[1]}</input>
-    <input class="answer" type='checkbox'>${g.answer[2]}</input>
-    <input class="answer" type='checkbox'>${g.answer[3]}</input>
+    <input class="answer" name="radAnswer" type='radio'><span>${g.answer[0]}</span></input>
+    <input class="answer" name="radAnswer" type='radio'><span>${g.answer[1]}</span></input>
+    <input class="answer" name="radAnswer" type='radio'><span>${g.answer[2]}</span></input>
+    <input class="answer" name="radAnswer" type='radio'><span>${g.answer[3]}</span></input>
 </form>
     `
   }).join('')
   formDiv.innerHTML = ""
   formDiv.innerHTML += forms
   answersBtn.style.display = 'block'
-  let answersbox = `<h3 class="answers" >Answers: 1: [ いえども ]  2: [ ともなると ]  3: [ まみれ ] 4: [ とあって ] 5: [ ぬいた ]</h3>`
+  let answersbox = `<h3 class="answers" >Answers: 1: [ いえども ]  <br> 2: [ ともなると ] <br> 3: [ まみれ ] <br> 4: [ とあって ] <br> 5: [ ぬいた ]</h3>`
   qAnswers.innerHTML = ""
   qAnswers.innerHTML += answersbox
   qAnswers.style.display = "none"
@@ -70,17 +70,17 @@ gb2.addEventListener('click', function(){
   let forms = n2GrammarArray.map(g => {
     return `<form class='grammar-form'>
     <p class='question-text'>${g.question}</p>
-    <input class="answer" type='checkbox'>${g.answer[0]}</input>
-    <input class="answer" type='checkbox'>${g.answer[1]}</input>
-    <input class="answer" type='checkbox'>${g.answer[2]}</input>
-    <input class="answer" type='checkbox'>${g.answer[3]}</input>
+    <input class="answer" type='radio' name="radAnswer"><span>${g.answer[0]}</span></input>
+    <input class="answer" type='radio' name="radAnswer"><span>${g.answer[1]}</span></input>
+    <input class="answer" type='radio' name="radAnswer"><span>${g.answer[2]}</span></input>
+    <input class="answer" type='radio' name="radAnswer"><span>${g.answer[3]}</span></input>
 </form>
     `
   }).join('')
   formDiv.innerHTML = ""
   formDiv.innerHTML += forms
   answersBtn.style.display = 'block'
-  let answersbox = `<h3 class="answers" >Answers: 1: [ しかかからない ]  2: [ 基づいて ]  3: [ 死に ] 4: [ ありながら ] 5: [ 最中 ]</h3>`
+  let answersbox = `<h3 class="answers" >Answers: 1: [ しかかからない ] <br> 2: [ 基づいて ] <br> 3: [ 死に ] <br> 4: [ ありながら ] <br> 5: [ 最中 ]</h3>`
   qAnswers.innerHTML = ""
   qAnswers.innerHTML += answersbox
   qAnswers.style.display = "none"
@@ -92,17 +92,17 @@ gb3.addEventListener('click', function(){
   let forms = n3GrammarArray.map(g => {
     return `<form class='grammar-form'>
         <p class='question-text'>${g.question}</p>
-        <input class="answer" type='checkbox'>${g.answer[0]}</input>
-        <input class="answer" type='checkbox'>${g.answer[1]}</input>
-        <input class="answer" type='checkbox'>${g.answer[2]}</input>
-        <input class="answer" type='checkbox'>${g.answer[3]}</input>
+    <input class="answer" type='radio' name="radAnswer" ><span>${g.answer[0]}</span></input>
+    <input class="answer" type='radio' name="radAnswer" ><span>${g.answer[1]}</span></input>
+    <input class="answer" type='radio' name="radAnswer" ><span>${g.answer[2]}</span></input>
+    <input class="answer" type='radio' name="radAnswer" ><span>${g.answer[3]}</span></input>
     </form>
     `
   }).join('')
   formDiv.innerHTML = ""
   formDiv.innerHTML += forms
   answersBtn.style.display = 'block'
-  let answersbox = `<h3 class="answers" >Answers: 1: [ って ]  2: [ たびに ]  3: [ いつの間にか ] 4: [ ことになった ] 5: [ のように ]</h3>`
+  let answersbox = `<h3 class="answers" >Answers: 1: [ って ] <br> 2: [ たびに ] <br> 3: [ いつの間にか ] <br> 4: [ ことになった ] <br> 5: [ のように ]</h3>`
   qAnswers.innerHTML = ""
   qAnswers.innerHTML += answersbox
   qAnswers.style.display = "none"
@@ -113,17 +113,17 @@ gb4.addEventListener('click', function(){
   let forms = n4GrammarArray.map(g => {
     return `<form class='grammar-form'>
         <p class='question-text'>${g.question}</p>
-        <input class="answer" type='checkbox'>${g.answer[0]}</input>
-        <input class="answer" type='checkbox'>${g.answer[1]}</input>
-        <input class="answer" type='checkbox'>${g.answer[2]}</input>
-        <input class="answer" type='checkbox'>${g.answer[3]}</input>
+    <input class="answer" type="radio" name="radAnswer"><span>${g.answer[0]}</span></input>
+    <input class="answer" type="radio" name="radAnswer"><span>${g.answer[1]}</span></input>
+    <input class="answer" type="radio" name="radAnswer"><span>${g.answer[2]}</span></input>
+    <input class="answer" type="radio" name="radAnswer"><span>${g.answer[3]}</span></input>
     </form>
     `
   }).join('')
   formDiv.innerHTML = ""
   formDiv.innerHTML += forms
   answersBtn.style.display = 'block'
-  let answersbox = `<h3 class="answers" >Answers: 1: [ のに ]  2: [ 決めないでほしい ]  3: [ かかってきた ] 4: [ できてよかった ] 5: [ あとで ]</h3>`
+  let answersbox = `<h3 class="answers" >Answers: 1: [ のに ] <br> 2: [ 決めないでほしい ] <br> 3: [ かかってきた ] <br> 4: [ できてよかった ] <br> 5: [ あとで ]</h3>`
   qAnswers.innerHTML = ""
   qAnswers.innerHTML += answersbox
   qAnswers.style.display = "none"
@@ -134,17 +134,17 @@ gb5.addEventListener('click', function(){
   let forms = n5GrammarArray.map(g => {
     return `<form class='grammar-form'>
     <p class='question-text'>${g.question}</p>
-    <input class="answer" type='checkbox'>${g.answer[0]}</input>
-    <input class="answer" type='checkbox'>${g.answer[1]}</input>
-    <input class="answer" type='checkbox'>${g.answer[2]}</input>
-    <input class="answer" type='checkbox'>${g.answer[3]}</input>
+    <input class="answer" type='radio' name="radAnswer"><span>${g.answer[0]}</span></input>
+    <input class="answer" type='radio' name="radAnswer"><span>${g.answer[1]}</span></input>
+    <input class="answer" type='radio' name="radAnswer"><span>${g.answer[2]}</span></input>
+    <input class="answer" type='radio' name="radAnswer"><span>${g.answer[3]}</span></input>
 </form>
     `
   }).join('')
   formDiv.innerHTML = ""
   formDiv.innerHTML += forms
   answersBtn.style.display = 'block'
-  let answersbox = `<h3 class="answers" >Answers: 1: [　を　]</span>  2: [　まだ　]  3: [　で　] 4: [　が　] 5: [　行って　]</h3>`
+  let answersbox = `<h3 class="answers" >Answers: 1: [　を　]</span> <br> 2: [　まだ　] <br> 3: [　で　] <br> 4: [　が　] <br> 5: [　行って　]</h3>`
   qAnswers.innerHTML = ""
   qAnswers.innerHTML += answersbox
   qAnswers.style.display = "none"

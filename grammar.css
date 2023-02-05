@@ -57,7 +57,7 @@ input {
 .buttons {
     display: flex;
     justify-content: center;
-    margin-top: 120px;
+    margin-top: 30px;
     gap:10px;
     
 }
@@ -78,13 +78,13 @@ input {
 
 .n-btn2:hover {
     cursor: pointer;
-    background-color: goldenrod;
+    background-color: brown;
     color: white;
 }
 
 .n-btn3:hover {
     cursor: pointer;
-    background-color: brown;
+    background-color: goldenrod;
     color: white;
 }
 
@@ -119,13 +119,12 @@ input {
     justify-content: center;
     position: fixed;
     top: 0%;
-    left: 15%;
+    left: 20%;
     right: 0;
     gap: 10px;
     padding: 5px;
-    border-radius: 10px;
-    width: 80%;
-    text-decoration: underline;
+    width: 75%;
+    border-bottom: 1px solid rgb(167, 162, 162);
 }
 
 
@@ -133,12 +132,8 @@ a, .nav-item {
     list-style: none;
     text-decoration: none;
     color: black;
-    font-size: 1rem;
-<<<<<<< HEAD
-    font-weight: 200;
-=======
-    font-weight: bold;
->>>>>>> de921754ea2eccf03c26d883fd0a0dc62303c687
+    font-size: 0.8rem;
+    font-weight: 300;
 }
 
 a:hover {
@@ -233,6 +228,10 @@ input {
     text-align: center;
 }
 
+span {
+    font-size: 1.1rem;
+}
+
 .answers-div {
     text-align: center;
     
@@ -246,4 +245,23 @@ input {
 
 .answer-text {
     color: rgb(144, 115, 62);
+}
+
+
+
+@media (min-width: 700px){
+    .nav-active {
+        flex-direction: column;
+        top: 8%;
+        left: 3%;
+        border-bottom: none;
+        
+    }
+    a {
+        font-weight: bold;
+        font-size: 1.3rem;
+    }
+    .n-btn {
+        font-size: 1.3rem;
+    }
 }
