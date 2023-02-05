@@ -134,7 +134,11 @@ a, .nav-item {
     text-decoration: none;
     color: black;
     font-size: 1rem;
+<<<<<<< HEAD
     font-weight: 200;
+=======
+    font-weight: bold;
+>>>>>>> de921754ea2eccf03c26d883fd0a0dc62303c687
 }
 
 a:hover {
