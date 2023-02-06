@@ -1,0 +1,278 @@
+body {
+    font-family: 'Noto Sans JP', 'Sofia Sans', sans-serif;
+    background: linear-gradient( rgba(229,236,235,1) 6%, rgb(229, 234, 232) 18%);
+}
+
+.header-text {
+    text-align: center;
+    margin-left: 30px;
+    margin-top: 80px;
+    align-self: flex-start
+}
+
+.kanji-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 100px;
+    gap: 30px;
+}
+
+.kanji-text {
+    font-size: 4rem;
+    padding: 0;
+    margin: 0;
+}
+
+input {
+    border: none;
+    padding: 10px;
+    border-radius: 10px;
+    font-size: 1.5rem;
+    font-weight: bolder;
+    text-align: center;
+}
+
+.submit-btn {
+    border: none;
+    background: rgba(87, 71, 38, 0.377);
+    border-radius: 10px;
+    padding: 10px 50px 10px 50px;
+    font-weight: bolder;
+}
+
+.submit-btn:hover {
+    background: grey;
+    cursor: pointer;
+}
+
+
+/* n buttons */
+
+.buttons-container {
+    width: 100%;
+    margin: 0 auto;
+}
+
+.buttons {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+    gap:10px;
+    
+}
+
+.n-btn {
+    padding: 3px 15px 3px 15px;
+    border-radius: 15px;
+    background-color: rgb(221, 217, 217);
+    text-transform: uppercase;
+    font-size: 1rem;
+}
+
+.n-btn1:hover {
+    cursor: pointer;
+    background-color: crimson;
+    color: white;
+}
+
+.n-btn2:hover {
+    cursor: pointer;
+    background-color: brown;
+    color: white;
+}
+
+.n-btn3:hover {
+    cursor: pointer;
+    background-color: goldenrod;
+    color: white;
+}
+
+.n-btn4:hover {
+    cursor: pointer;
+    background-color: lightseagreen;
+    color: white;
+}
+
+.n-btn5:hover {
+    cursor: pointer;
+    background-color: lightskyblue;
+    color: white;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+}
+
+/* nav */
+
+.nav-links {
+    display: none;
+    margin-left: -40px;
+}
+
+.nav-active {
+    list-style: none;
+    display: flex;
+    -flex-direction: column;
+    justify-content: center;
+    position: fixed;
+    top: 0%;
+    left: 20%;
+    right: 0;
+    gap: 10px;
+    padding: 5px;
+    width: 75%;
+    border-bottom: 1px solid rgb(167, 162, 162);
+}
+
+
+a, .nav-item {
+    list-style: none;
+    text-decoration: none;
+    color: black;
+    font-size: 0.8rem;
+    font-weight: 300;
+}
+
+a:hover {
+    color: goldenrod;
+}
+
+.menu-button {
+    font-size: 30px;
+    cursor: pointer;
+    position: fixed;
+}
+
+
+
+
+
+ /* grammar forms  */
+
+.form-container {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    margin: 50px auto;
+    max-width: 700px;
+    width: 100%;
+    font-weight: bold;
+    font-size: 1.3rem;
+    text-align: center;
+}
+
+input {
+    margin: 20px;
+    height: 15px;
+    width: 15px;
+}
+
+
+/* dark */
+
+.dark-btn {
+    border: none;
+    border-radius: 10px;
+    padding: 10px;
+    height: 35px;
+    background: rgb(221, 217, 217);
+    font-family: 'Sofia-sans', Helvetica, sans-serif;
+}
+
+.dark-btn:hover {
+    cursor: pointer;
+    background: goldenrod;
+}
+
+
+.dark {
+    background: rgb(35,36,38);
+    background: radial-gradient(circle, rgba(35,36,38,1) 0%, rgba(24,21,22,1) 100%);
+}
+
+.dark-input{
+    background: rgb(221, 217, 217);
+}
+
+.dark-text {
+    color: rgb(221, 217, 217);
+}
+
+
+.show-hide-container {
+    text-align: center;
+}
+
+.show-hide-toggle {
+    display: none;
+}
+
+/* answers at bottom */
+
+.answers-btn {
+    display: none;
+    cursor: pointer;
+    background: none;
+    font-family: 'Noto Sans JP', 'Sofia Sans', sans-serif;
+    font-weight: bold;
+    font-size: 1rem;
+    border-radius: 10px;
+    padding: 5px;
+}
+
+.answers {
+    -display: none;
+    text-align: center;
+}
+
+span {
+    font-size: 1.1rem;
+}
+
+.answers-div {
+    text-align: center;
+    
+}
+
+#answers-display {
+    display: none;
+    border: 1px solid rgb(221, 217, 217);
+    margin-top: -35px;
+}
+
+.answer-text {
+    color: rgb(144, 115, 62);
+}
+
+
+iframe {
+    width: 50%;
+    margin: 0 auto;
+    display: block;
+    margin-top: 50px;
+}
+
+
+@media (min-width: 700px){
+    .nav-active {
+        flex-direction: column;
+        top: 8%;
+        left: 3%;
+        border-bottom: none;
+        
+    }
+    a {
+        font-weight: bold;
+        font-size: 1.3rem;
+    }
+    .n-btn {
+        font-size: 1.3rem;
+    }
+    iframe {
+        width: 600px;
+        height: 400px
+    }
+}
