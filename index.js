@@ -1,5 +1,4 @@
 import {kanjiArrayn1, kanjiArrayn2, kanjiArrayn3, kanjiArrayn4, kanjiArrayn5} from './kanjiArrays.js'
-import {n2GrammarArray, n1GrammarArray, n3GrammarArray, n4GrammarArray, n5GrammarArray} from './grammar.js'
 
 let kanjiInput = document.getElementById('kanji-input')
 let currentKanji = document.getElementById('kanji-text')
@@ -28,7 +27,7 @@ function navToggle(){
   navItems.classList.toggle('nav-active')
 }
 
-
+// dark toggle 
 darkToggle.addEventListener('click', toggle)
 function toggle(){
     document.body.classList.toggle('dark')
@@ -91,76 +90,3 @@ btn3.addEventListener('click', () => {
     currentKanji.textContent = activeArray[Math.floor(Math.random() * activeArray.length)]
   })
 
-  // grammar forms for grammar page //
-
-gb1.addEventListener('click', function(){
-  let forms = n1GrammarArray.map(g => {
-    return `<form class='grammar-form'>
-        <p class='question1-text'>${g}</p>
-        <input type='checkbox'>...</input>
-        <input type='checkbox'>...</input>
-        <input type='checkbox'>...</input>
-        <input type='checkbox'>...</input>
-    </form>
-    `
-  }).join('')
-  formDiv.innerHTML = ""
-  formDiv.innerHTML += forms
-})
-
-gb2.addEventListener('click', function(){
-  let forms = n2GrammarArray.map(g => {
-    return `<form class='grammar-form'>
-        <p class='question1-text'>${g}</p>
-        <input type='checkbox'>...</input>
-        <input type='checkbox'>...</input>
-        <input type='checkbox'>...</input>
-        <input type='checkbox'>...</input>
-    </form>
-    `
-  }).join('')
-  formDiv.innerHTML = ""
-  formDiv.innerHTML += forms
-})
-
-gb3.addEventListener('click', function(){
-  let forms = n3GrammarArray.map(g => {
-    return `<form class='grammar-form'>
-        <p class='question1-text'>${g.question}</p>
-        <input type='checkbox'>${g.answer[0]}</input>
-        <input type='checkbox'>${g.answer[1]}</input>
-        <input type='checkbox'>${g.answer[2]}</input>
-        <input type='checkbox'>${g.answer[3]}</input>
-    </form>
-    `
-  }).join('')
-  formDiv.innerHTML += forms
-})
-
-gb4.addEventListener('click', function(){
-  let forms = n4GrammarArray.map(g => {
-    return `<form class='grammar-form'>
-        <p class='question1-text'>${g}</p>
-        <input type='checkbox'>...</input>
-        <input type='checkbox'>...</input>
-        <input type='checkbox'>...</input>
-        <input type='checkbox'>...</input>
-    </form>
-    `
-  }).join('')
-  formDiv.innerHTML += forms
-})
-
-gb5.addEventListener('click', function(){
-  let forms = n5GrammarArray.map(g => {
-    return `<form class='grammar-form'>
-        <p class='question1-text'>${g}</p>
-        <input type='checkbox'>...</input>
-        <input type='checkbox'>...</input>
-        <input type='checkbox'>...</input>
-        <input type='checkbox'>...</input>
-    </form>
-    `
-  }).join('')
-  formDiv.innerHTML += forms
-})
